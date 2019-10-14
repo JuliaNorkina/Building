@@ -33,6 +33,11 @@
             this.numberOfEntrances = numberOfEntrances;
         }
 
+        public double getId()
+        {
+            return id;
+        }
+
         public double getHeight()
         {
             return height;
@@ -60,7 +65,6 @@
 
         public int calculationNumberOfApartmentsInEntrance()
         {
-
             return numberOfApartments / numberOfEntrances;
         }
 
