@@ -1,6 +1,6 @@
-﻿namespace Building
+﻿namespace BuildingProg
 {
-    class Building
+     public class Building
     {
         int id;
         static int idGenerator = 0;
@@ -9,18 +9,48 @@
         int numberOfApartments;
         int numberOfEntrances;
 
-        public Building(double height, int numberOfStoreys, int numberOfApartments, int numberOfEntrances)
+        public Building()
         {
             id = generator();
+        }
+
+        public void setHeight(double height) {
             this.height = height;
+        }
+
+        public void setNumberOfStoreys(int numberOfStoreys)
+        {
             this.numberOfStoreys = numberOfStoreys;
+        }
+
+        public void setNumberOfApartments(int numberOfApartments)
+        {
             this.numberOfApartments = numberOfApartments;
+        }
+
+        public void setNumberOfEntrances(int numberOfEntrances)
+        {
             this.numberOfEntrances = numberOfEntrances;
         }
 
-        public Building getBuildingInfo()
+        public double getHeight()
         {
-            return this;
+            return height;
+        }
+
+        public int getNumberOfStoreys()
+        {
+            return numberOfStoreys;
+        }
+
+        public int getNumberOfApartments()
+        {
+            return numberOfApartments;
+        }
+
+        public int getNumberOfEntrances()
+        {
+            return numberOfEntrances;
         }
 
         public double floorHeightCalculations()
